@@ -11,7 +11,7 @@
         <property name="endingDelimiter" value="`"/>
 
         <plugin type="tk.mybatis.mapper.generator.MapperPlugin">
-            <property name="mappers" value="com.coca.api.utils.MyMapper"/>
+            <property name="mappers" value="com.coca.fun.service.utils.MyMapper"/>
         </plugin>
 
         <jdbcConnection driverClass="${db.driver-class}"
@@ -20,11 +20,11 @@
                         password="${db.password}">
         </jdbcConnection>
 
-        <javaModelGenerator targetPackage="com.coca.api.domain" targetProject="src/main/java"/>
+        <javaModelGenerator targetPackage="com.coca.dao.domain" targetProject="src/main/java"/>
 
         <sqlMapGenerator targetPackage="mapper" targetProject="src/main/resources"/>
 
-        <javaClientGenerator targetPackage="com.coca.api.dao" targetProject="src/main/java"
+        <javaClientGenerator targetPackage="com.coca.dao" targetProject="src/main/java"
                              type="XMLMAPPER"/>
 
         <table tableName="%">

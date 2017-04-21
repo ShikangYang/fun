@@ -22,6 +22,16 @@
             <groupId>com.coca.fun</groupId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <artifactId>com-coca-fun-api</artifactId>
+            <groupId>com.coca.fun</groupId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <artifactId>com-coca-fun-web</artifactId>
+            <groupId>com.coca.fun</groupId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
 </project>
