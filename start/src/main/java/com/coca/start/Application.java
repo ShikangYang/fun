@@ -1,4 +1,4 @@
-package com.coca.web;
+package com.coca.start;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
