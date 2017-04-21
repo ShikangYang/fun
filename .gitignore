@@ -1,5 +1,4 @@
 ﻿# project ignore
-application.properties
 LOG_HOME_IS_UNDEFINED
 application.pid
 application.port

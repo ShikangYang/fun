@@ -17,9 +17,8 @@
 
 
     <modules>
-        <module>domain</module>
-        <module>service</module>
         <module>dao</module>
+        <module>service</module>
         <module>web</module>
         <module>start</module>
         <module>api</module>
