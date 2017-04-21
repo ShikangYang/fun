@@ -11,5 +11,17 @@
 
     <artifactId>com-coca-fun-start</artifactId>
 
+    <dependencies>
+        <dependency>
+            <artifactId>com-coca-fun-dao</artifactId>
+            <groupId>com.coca.fun</groupId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <artifactId>com-coca-fun-service</artifactId>
+            <groupId>com.coca.fun</groupId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 </project>

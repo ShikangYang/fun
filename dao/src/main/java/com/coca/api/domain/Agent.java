@@ -1,4 +1,4 @@
-package com.coca.fun.domain;
+package com.coca.api.domain;
 
 import java.util.Date;
 import javax.persistence.*;

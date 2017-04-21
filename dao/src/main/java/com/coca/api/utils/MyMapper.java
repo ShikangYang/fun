@@ -22,7 +22,7 @@
  * THE SOFTWARE.
  */
 
-package com.coca.fun.utils;
+package com.coca.api.utils;
 
 import tk.mybatis.mapper.common.Mapper;
 import tk.mybatis.mapper.common.MySqlMapper;
