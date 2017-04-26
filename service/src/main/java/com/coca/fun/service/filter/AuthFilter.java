@@ -28,7 +28,7 @@ public class AuthFilter implements Filter {
 
     @Override
     public void init(FilterConfig config) throws ServletException {
-        logger.info("init -->");
+        logger.info("init");
     }
 
     @Override
@@ -43,7 +43,6 @@ public class AuthFilter implements Filter {
             response.sendError(HttpStatus.UNAUTHORIZED.value(), "URL not found"); //没有找到Authorization
             return;
         }
-        logger.info("doFilter -->{}", url);
         chain.doFilter(req, resp);
 
     }
