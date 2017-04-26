@@ -35,7 +35,6 @@ public class IndexController extends BaseController {
     @RequestMapping(value = "/",method = RequestMethod.POST)
     public void index(HttpServletRequest request,
                       HttpServletResponse response) throws AesException, IOException {
-        Token token = TokenAPI.token(APPID, APPSSECRET);
 
         EventMessage eventMessage = XMLConverUtil.convertToObject(EventMessage.class, request.getInputStream());
         logger.info("{}",new Gson().toJson(eventMessage));
@@ -46,9 +45,9 @@ public class IndexController extends BaseController {
                 xmlTextMessage = new XMLTextMessage(
                         eventMessage.getFromUserName(),
                         eventMessage.getToUserName(),
-                        "<a href='http://www.baidu.com'>足浴</a> \n" +
-                                "<a href='http://www.baidu.com'>KTV</a> \n" +
-                                "<a href='http://www.baidu.com'>店铺</a>");
+                                "足浴：<a href='http://www.baidu.com'>足浴</a> \n" +
+                                "\nKTV：<a href='http://www.google.com'>KTV</a> \n" +
+                                "\n店铺：<a href='http://www.vipkid.com.cn'>店铺</a>");
             } else if(StringUtils.equals(eventMessage.getContent(),"休闲")){
                 xmlTextMessage = new XMLTextMessage(
                         eventMessage.getFromUserName(),
@@ -100,6 +99,7 @@ public class IndexController extends BaseController {
 
     @RequestMapping(value = "/menu")
     public void menu(HttpServletRequest request, HttpServletResponse response){
+
         Token token = TokenAPI.token(APPID, APPSSECRET);
         MenuAPI.menuCreate(token.getAccess_token(), menuJson);
 
