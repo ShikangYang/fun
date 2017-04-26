@@ -20,11 +20,11 @@
                         password="${db.password}">
         </jdbcConnection>
 
-        <javaModelGenerator targetPackage="com.coca.dao.domain" targetProject="src/main/java"/>
+        <javaModelGenerator targetPackage="com.coca.fun.dao.domain" targetProject="src/main/java"/>
 
         <sqlMapGenerator targetPackage="mapper" targetProject="src/main/resources"/>
 
-        <javaClientGenerator targetPackage="com.coca.dao" targetProject="src/main/java"
+        <javaClientGenerator targetPackage="com.coca.fun.dao" targetProject="src/main/java"
                              type="XMLMAPPER"/>
 
         <table tableName="%">
