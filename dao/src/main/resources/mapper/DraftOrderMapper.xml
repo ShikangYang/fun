@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.coca.fun.dao.DraftOrderMapper">
-  <resultMap id="BaseResultMap" type="com.coca.fun.dao.domain.DraftOrder">
+<mapper namespace="com.vipjoy.joy.dao.mapper.DraftOrderMapper">
+  <resultMap id="BaseResultMap" type="com.vipjoy.joy.dao.domain.DraftOrder">
     <!--
       WARNING - @mbg.generated
     -->

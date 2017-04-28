@@ -3,17 +3,17 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>com-coca-fun</artifactId>
-        <groupId>com.coca.fun</groupId>
+        <groupId>com.vipjoy.joy</groupId>
+        <artifactId>com-vipjoy-joy</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>com-coca-fun-dao</artifactId>
+    <artifactId>com-vipjoy-joy-dao</artifactId>
     <dependencies>
         <dependency>
-            <groupId>com.coca.fun</groupId>
-            <artifactId>com-coca-fun-service</artifactId>
+            <groupId>com.vipjoy.joy</groupId>
+            <artifactId>com-vipjoy-joy-service</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>

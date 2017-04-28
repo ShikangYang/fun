@@ -3,35 +3,53 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>com-coca-fun</artifactId>
-        <groupId>com.coca.fun</groupId>
+        <groupId>com.vipjoy.joy</groupId>
+        <artifactId>com-vipjoy-joy</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
-    <artifactId>com-coca-fun-start</artifactId>
+    <artifactId>com-vipjoy-joy-start</artifactId>
+    <packaging>war</packaging>
 
     <dependencies>
         <dependency>
-            <artifactId>com-coca-fun-dao</artifactId>
-            <groupId>com.coca.fun</groupId>
+            <groupId>com.vipjoy.joy</groupId>
+            <artifactId>com-vipjoy-joy-dao</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <artifactId>com-coca-fun-service</artifactId>
-            <groupId>com.coca.fun</groupId>
+            <groupId>com.vipjoy.joy</groupId>
+            <artifactId>com-vipjoy-joy-service</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <artifactId>com-coca-fun-api</artifactId>
-            <groupId>com.coca.fun</groupId>
+            <groupId>com.vipjoy.joy</groupId>
+            <artifactId>com-vipjoy-joy-api</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <artifactId>com-coca-fun-web</artifactId>
-            <groupId>com.coca.fun</groupId>
+            <groupId>com.vipjoy.joy</groupId>
+            <artifactId>com-vipjoy-joy-web</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>1.4.3.RELEASE</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
 
 </project>
