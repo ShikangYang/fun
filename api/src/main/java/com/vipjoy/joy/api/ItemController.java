@@ -25,14 +25,14 @@ public class ItemController {
 
     @RequestMapping(value = "/index", method = RequestMethod.GET)
     public String index(Model model) {
-        return "index";
+        return "oh/index";
     }
 
     @RequestMapping(value = "/item", method = RequestMethod.GET)
     public String item(Model model) {
         return "item";
     }
-    @RequestMapping(value = "/itemDetails", method = RequestMethod.GET)
+    @RequestMapping(value = "itemDetails", method = RequestMethod.GET)
     public String itemDetails(Model model) {
         return "item_details";
     }

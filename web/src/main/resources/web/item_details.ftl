@@ -93,6 +93,4 @@
 
 
 
-
-
 <#include "footer.ftl">
