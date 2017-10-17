@@ -22,6 +22,7 @@
         <module>start</module>
         <module>api</module>
         <module>client</module>
+        <module>front</module>
     </modules>
 
     <properties>
