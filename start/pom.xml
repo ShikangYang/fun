@@ -27,11 +27,6 @@
             <artifactId>com-vipjoy-joy-api</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
-        <dependency>
-            <groupId>com.vipjoy.joy</groupId>
-            <artifactId>com-vipjoy-joy-web</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
     </dependencies>
 
     <build>
