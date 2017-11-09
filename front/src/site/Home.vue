@@ -1,5 +1,5 @@
 <template>
-    <div class="page-container" id="app">
+    <div class="page-container">
 
         <header class="el-header">
             <el-row>
@@ -104,8 +104,9 @@
 </template>
 
 <script>
-    new Vue({
-        el: '#app',
+
+    export default {
+        name: 'Home',
         data: function() {
             return { visible: false,activeIndex2: '1',
                 tags: ['标签一', '标签二', '标签三3333'],
@@ -145,8 +146,7 @@
                 alert();
             }
         }
-    });
-
+    }
 </script>
 
 <style>

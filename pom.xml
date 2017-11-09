@@ -22,7 +22,7 @@
         <module>start</module>
         <module>api</module>
         <module>client</module>
-        <module>front</module>
+        <module>web</module>
     </modules>
 
     <properties>
