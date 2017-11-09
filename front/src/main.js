@@ -26,6 +26,7 @@ import locale from 'element-ui/lib/locale'
 import moment from 'moment'
 import axios from 'axios'
 import curvejs from 'curvejs'
+import router from './router/index'
 
 Object.defineProperty(Vue.prototype, '$moment', { value: moment });
 Object.defineProperty(Vue.prototype, '$axios', { value: axios });
@@ -46,11 +47,9 @@ Vue.use(Option);
 
 locale.use(lang);
 
-
-
 // eslint-disable-next-line no-new
-new Vue({
-    el: '#app',
+const app = new Vue({
+    router: router,
     render: h => h(App)
-});
+}).$mount('#app')
 
