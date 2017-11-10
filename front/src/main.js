@@ -46,8 +46,13 @@ Vue.use(Option);
 
 locale.use(lang);
 
+
+
 // eslint-disable-next-line no-new
+
 const app = new Vue({
+
+    el: '#app',
     render: h => h(App)
-}).$mount('#app')
+});
 
