@@ -1,8 +1,6 @@
 package com.vipjoy.joy.api.resp;
 
-/**
- * Created by zhaoyue on 17/6/21.
- */
+
 public class Response<T> {
 
     private Integer code;

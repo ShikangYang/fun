@@ -1,10 +1,5 @@
 package com.vipjoy.joy.api.resp;
 
-/**
- * 1001 -- 1999 本系统异常
- * 2001 -- 2999 其他系统异常
- * Created by zhaoyue on 2017/6/21.
- */
 public enum ResponseCode {
     PARAM_FAIL(1001, "参数异常"),
     PARAM_NOT_FOND(400, "没有找到"),
