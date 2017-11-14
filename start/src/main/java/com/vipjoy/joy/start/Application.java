@@ -12,7 +12,7 @@ import org.springframework.context.annotation.ComponentScan;
 @SpringBootApplication
 @MapperScan(basePackages = "com.vipjoy.joy.dao.mapper")
 @ComponentScan(basePackages = "com.vipjoy.joy")
-@ServletComponentScan(value = {"com.vipjoy.joy.service.filter"})
+@ServletComponentScan(basePackages = "com.vipjoy.joy.api.filter")
 public class Application extends SpringBootServletInitializer {
 
     public static void main(String[] args) {

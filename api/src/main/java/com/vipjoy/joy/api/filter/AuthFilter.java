@@ -1,10 +1,8 @@
 package com.vipjoy.joy.api.filter;
 
 
-import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.http.HttpStatus;
 
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
@@ -33,11 +31,11 @@ public class AuthFilter implements Filter {
         HttpServletResponse response = (HttpServletResponse) resp;
         String url = request.getRequestURI();
 
-        String authorization = request.getHeader(HTTP_HEADER_TOKEN);
-        if (StringUtils.isEmpty(url)) {
-            response.sendError(HttpStatus.UNAUTHORIZED.value(), "URL not found"); //没有找到Authorization
-            return;
-        }
+//        String authorization = request.getHeader(HTTP_HEADER_TOKEN);
+//        if (StringUtils.isEmpty(authorization)) {
+//            response.sendError(HttpStatus.UNAUTHORIZED.value(), "URL not found"); //没有找到Authorization
+//            return;
+//        }
         chain.doFilter(req, resp);
 
     }
