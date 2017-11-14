@@ -32,7 +32,8 @@ catalina.base_IS_UNDEFINED/
 *.diff
 *.patch
 *.tmp
-
+dist/
+node_modules/
 # system ignore
 .DS_Store
 Thumbs.db

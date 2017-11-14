@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.vipjoy.joy.dao.mapper.OnlineClassMapper" >
+  <resultMap id="BaseResultMap" type="com.vipjoy.joy.dao.domain.OnlineClass" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="id" property="id" jdbcType="BIGINT" />
+    <result column="able_to_enter_classroom_date_time" property="ableToEnterClassroomDateTime" jdbcType="TIMESTAMP" />
+    <result column="archived" property="archived" jdbcType="BIT" />
+    <result column="attatchDocumentSucess" property="attatchdocumentsucess" jdbcType="TINYINT" />
+    <result column="backup" property="backup" jdbcType="BIT" />
+    <result column="book_date_time" property="bookDateTime" jdbcType="TIMESTAMP" />
+    <result column="can_undo_finish" property="canUndoFinish" jdbcType="BIT" />
+    <result column="classroom" property="classroom" jdbcType="VARCHAR" />
+    <result column="consume_class_hour" property="consumeClassHour" jdbcType="BIT" />
+    <result column="finish_type" property="finishType" jdbcType="VARCHAR" />
+    <result column="last_edit_date_time" property="lastEditDateTime" jdbcType="TIMESTAMP" />
+    <result column="max_student_number" property="maxStudentNumber" jdbcType="INTEGER" />
+    <result column="min_student_number" property="minStudentNumber" jdbcType="INTEGER" />
+    <result column="scheduled_date_time" property="scheduledDateTime" jdbcType="TIMESTAMP" />
+    <result column="serial_number" property="serialNumber" jdbcType="VARCHAR" />
+    <result column="status" property="status" jdbcType="VARCHAR" />
+    <result column="student_enter_classroom_date_time" property="studentEnterClassroomDateTime" jdbcType="TIMESTAMP" />
+    <result column="teacher_enter_classroom_date_time" property="teacherEnterClassroomDateTime" jdbcType="TIMESTAMP" />
+    <result column="wxt_course_id" property="wxtCourseId" jdbcType="VARCHAR" />
+    <result column="creater_id" property="createrId" jdbcType="BIGINT" />
+    <result column="last_editor_id" property="lastEditorId" jdbcType="BIGINT" />
+    <result column="lesson_id" property="lessonId" jdbcType="BIGINT" />
+    <result column="teacher_id" property="teacherId" jdbcType="BIGINT" />
+    <result column="short_notice" property="shortNotice" jdbcType="BIT" />
+    <result column="unit_price" property="unitPrice" jdbcType="REAL" />
+    <result column="is_paid_trail" property="isPaidTrail" jdbcType="BIT" />
+    <result column="supplier_code" property="supplierCode" jdbcType="CHAR" />
+    <result column="student_changed_tag" property="studentChangedTag" jdbcType="BIT" />
+    <result column="class_type" property="classType" jdbcType="SMALLINT" />
+    <result column="course_id" property="courseId" jdbcType="BIGINT" />
+    <result column="book_type" property="bookType" jdbcType="TINYINT" />
+    <result column="comments" property="comments" jdbcType="LONGVARCHAR" />
+    <result column="dby_document" property="dbyDocument" jdbcType="LONGVARCHAR" />
+  </resultMap>
+</mapper>

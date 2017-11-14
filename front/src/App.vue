@@ -1,7 +1,7 @@
 <template>
     <div class="wrapper">
         <!-- header-->
-
+            {{haah}}
         <el-row class="container">
             <home></home>
             <!-- body-->
@@ -20,11 +20,15 @@
 
 <script>
     import Home from './site/Home.vue';
+
     export default {
         name: 'app',
         components: {
             Home
         },
+        data() {
+            return {haah: "hello world"}
+        }
     }
 
 </script>
