@@ -25,6 +25,7 @@
         <module>web</module>
         <module>domain</module>
         <module>config</module>
+        <module>live</module>
     </modules>
 
     <properties>
