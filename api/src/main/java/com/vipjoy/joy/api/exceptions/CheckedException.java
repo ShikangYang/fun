@@ -1,4 +1,4 @@
-package com.vipjoy.joy.service.exceptions;
+package com.vipjoy.joy.api.exceptions;
 
 
 public class CheckedException extends Exception {

@@ -1,9 +1,9 @@
 package com.vipjoy.joy.api;
 
 
-import com.vipjoy.joy.service.exceptions.IllegalException;
-import com.vipjoy.joy.service.exceptions.NotFoundException;
 import com.google.common.base.Throwables;
+import com.vipjoy.joy.api.exceptions.IllegalException;
+import com.vipjoy.joy.api.exceptions.NotFoundException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;

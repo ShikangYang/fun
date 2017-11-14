@@ -10,8 +10,8 @@ import org.springframework.context.annotation.ComponentScan;
 
 
 @SpringBootApplication
-@MapperScan(basePackages = "com.vipjoy.joy.dao")
-@ComponentScan(basePackages = "com.vipjoy.joy.api")
+@MapperScan(basePackages = "com.vipjoy.joy.dao.mapper")
+@ComponentScan(basePackages = "com.vipjoy.joy")
 @ServletComponentScan(value = {"com.vipjoy.joy.service.filter"})
 public class Application extends SpringBootServletInitializer {
 

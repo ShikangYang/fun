@@ -10,12 +10,6 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>com-vipjoy-joy-dao</artifactId>
-    <dependencies>
-        <dependency>
-            <groupId>com.vipjoy.joy</groupId>
-            <artifactId>com-vipjoy-joy-service</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-    </dependencies>
+
 
 </project>

@@ -1,5 +1,6 @@
 package com.vipjoy.joy.api.config;
 
+import com.alibaba.fastjson.JSONObject;
 import org.apache.log4j.Logger;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.AfterReturning;
@@ -57,7 +58,7 @@ public class WebLogAspect {
     public void doAfterReturning(Object ret) throws Throwable {
 
 
-        logger.info("RESPONSE : " + ret);
+        logger.info("RESPONSE : " + JSONObject.toJSONString(ret));
 
         logger.info("SPEND TIME : " + (System.currentTimeMillis() - startTime.get()));
     }
