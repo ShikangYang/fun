@@ -4,7 +4,8 @@ import com.vipjoy.joy.api.resp.Response;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController(value = "/api/v1/user")
+@RestController
+@RequestMapping(value = "/api/v1/user")
 public class UserController extends BaseController {
 
 
