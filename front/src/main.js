@@ -3,6 +3,7 @@
  */
 
 import Vue from 'vue'
+import router from './router/index'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-default/index.css'
 import App from './App.vue'
@@ -19,15 +20,16 @@ Object.defineProperty(Vue.prototype, '$axios', { value: axios });
 Object.defineProperty(Vue.prototype, '$curvejs', { value: curvejs });
 
 Vue.use(ElementUI);
-
 locale.use(lang);
+
+
 
 
 
 // eslint-disable-next-line no-new
 
 const app = new Vue({
-    el: '#app',
-    render: h => h(App)
+        el: '#app',
+        router:router,
+        render: h => h(App)
 });
-

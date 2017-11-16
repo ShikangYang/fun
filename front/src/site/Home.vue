@@ -1,42 +1,32 @@
 <template>
-    <div class="page-container">
+    <div class="page">
 
-        <header class="el-header">
+        <header class="el-header page-container" style="margin-bottom: 30px;">
             <el-row>
                 <el-col :span="8"><div class="grid-content bg-purple-dark">LOGO</div></el-col>
                 <el-col :span="16"><div class="grid-content bg-purple-dark">
-                    <el-form :inline="true" class="demo-form-inline search_input">
-                        <el-form-item>
-                            <el-input placeholder="搜索关键字"></el-input>
-                        </el-form-item>
-                        <el-form-item>
-                            <el-button type="primary" icon="el-icon-search" @click="onSubmit">搜索</el-button>
-                        </el-form-item>
-                    </el-form>
+                    <div class="home-btn">
+                        <el-button size="small" round @click="login">登录</el-button>
+                        <el-button size="small" round @click="register">注册</el-button>
+                    </div>
                 </div>
                 </el-col>
             </el-row>
-            <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
-                <el-menu-item index="1">处理中心</el-menu-item>
-                <el-submenu index="2">
-                    <template slot="title">我的工作台</template>
-                    <el-menu-item index="2-1">选项1</el-menu-item>
-                    <el-menu-item index="2-2">选项2</el-menu-item>
-                    <el-menu-item index="2-3">选项3</el-menu-item>
-                </el-submenu>
-                <el-menu-item index="3"><a href="#" target="_blank">订单管理</a></el-menu-item>
-            </el-menu>
-            <div class="line"></div>
+
         </header>
         <main class="el-main">
 
-            <el-carousel indicator-position="outside">
-                <el-carousel-item v-for="item in 4" :key="item">
-                    <h3>{{ item }}</h3>
+            <div class="banner" style="height: 580px;">
+            <el-carousel>
+                <el-carousel-item>
+                    <img src="http://fe-static.vipkid.com.cn/img/sem/sem-banner-new-5109bc15e2.png" width="100%" height="100%" />
                 </el-carousel-item>
             </el-carousel>
+            </div>
+            <div class="page-container" style="margin-top: 10px;margin-bottom: 10px;">
+                <h2 style="text-align: center">我们的优势</h2>
             <el-row>
-                <el-col :span="6" v-for="(o, index) in 3" :key="o" :offset="index > 0 ? 3 : 0">
+                <el-col :span="7" v-for="(o, index) in 3" :key="o" :offset="index > 0 ? 1 : 0">
                     <el-card :body-style="{ padding: '0px' }">
                         <img src="http://element-cn.eleme.io/static/hamburger.50e4091.png" class="image">
                         <div style="padding: 14px;">
@@ -49,6 +39,28 @@
                     </el-card>
                 </el-col>
             </el-row>
+
+                <div class="lesson_c">
+                    <dl style="text-align: center;margin-top: 20px;">
+                        <dt><h1>课程体系</h1></dt>
+                        <dd>根据一对一测评结果，选择不同级别的主修课程</dd>
+                    </dl>
+                    <img src="http://fe-static.vipkid.com.cn/img/sem/standard01-c6cd2604d6.png" width="100%" />
+                    <img src="//fe-static.vipkid.com.cn/img/sem/classintro-table-18d752bd21.png" width="100%" />
+                </div>
+            </div>
+            <div style="background-color: #f67024;height: 300px;color: white;text-align: center;padding: 50px 0px 50px 0px;">
+                <div class="page-container chengnuo">
+                <p><h1>我们的承诺</h1></p>
+                    <el-row>
+                        <el-col :span="8"><div class="grid-content bg-purple">对课程或服务不满意，可在开课（包括主修课和公开课）后30天内，并且上课少于12节向我们提出“无条件全额退款”申请。</div></el-col>
+                        <el-col :span="8"><div class="grid-content bg-purple-light">付费后，每位学员都会与VIPKID签订
+                            一份购买协议，我们向学员保障服务水平。</div></el-col>
+                        <el-col :span="8"><div class="grid-content bg-purple">VIPKID一贯坚持“纯北美外教，纯美国教材
+                            “的教学理念，我们保证外教的优质教学水平。</div></el-col>
+                    </el-row>
+                </div>
+            </div>
             <!--<div>-->
                 <!--<el-button @click="Login">登录</el-button>-->
                 <!--<el-button type="primary">主要按钮</el-button>-->
@@ -58,7 +70,29 @@
                 <!--<el-button type="danger">危险按钮</el-button>-->
             <!--</div>-->
         </main>
-        <footer class="el-footer" style="height: 60px;">Footer</footer>
+        <footer class="el-footer" style="
+    background: #666;
+    color: #fff;
+    padding: 10px 0;text-align: center">
+            <div class="page-container">
+            <div class="footArea">
+                <p class="footLink">
+                    <a href="" target="_blank">关于我们</a>
+                    <a href="http://www.vipkid.com.cn/contact" target="_blank">联系我们</a>
+                    <a href="http://www.vipkid.com.cn/jobs" target="_blank">加入我们</a>
+                    <a href="http://www.vipkid.com.cn/media" target="_blank">媒体报道</a>
+                    <a href="http://www.vipkid.com.cn/cooperation" target="_blank">渠道合作</a>
+                    <a href="http://www.vipkid.com.cn/download" target="_blank">常用软件</a>
+                    <a href="http://www.vipkid.com.cn/faq" target="_blank">常见问题</a>
+                    <a href="http://teacher-recruitment.vipkid.com.cn/" target="_blank" title="Teacher Recruitment">Teacher Recruitment</a>
+                </p>
+                <!--<p class="footContact">客服电话：1010-1613<br>(工作时间  周一至周日 08:30~22:00)</p>-->
+            </div>
+            <div class="footIcp">京ICP备 14002500号&nbsp;&nbsp;&nbsp;&nbsp;北京大米科技有限公司
+                <p>公司地址：北京市东城区地安门东大街89号16幢2层201</p>
+            </div>
+            </div>
+        </footer>
     </div>
 </template>
 
@@ -90,18 +124,22 @@
             handleChange(value) {
                 console.log(value);
             },
-            Login(){
-                Login;
+            login(){
+                this.$router.push("login");
+            },
+            register(){
+                this.$router.push("register");
             }
         }
     }
 </script>
 
 <style>
+    body{margin: 0px;}
     .page-container{
         width: 1140px;margin: 0 auto;
     }
-    .search_input{float: right}
+    .home-btn{float: right}
     .el-tag{margin-top: 10px;}
     .el-tag + .el-tag {
         margin-left: 15px;
@@ -151,6 +189,41 @@
 
     .clearfix:after {
         clear: both
+    }
+    .el-carousel{
+        width: 100%;
+        height: 100%;
+    }
+    .el-carousel__container{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .lesson_c {
+        width: 988px;
+        z-index: 1;
+        padding: 0 0 78px;
+        margin: 0 auto;
+    }
+    .lesson_c img{margin-top: 50px;}
+    .chengnuo .el-col{padding: 45px;}
+    .footLink a {
+        margin-right: 30px;
+        line-height: 36px;
+        color: #fff;
+        filter: alpha(opacity=80);
+        opacity: .8;
+        list-style: none;
+    }
+    .footArea {
+        height: 59px;
+        border-bottom: 1px solid #999;
+        font-size: 12px;
+    }
+    .footIcp {
+        color: #999;
+        padding: 20px 0 30px;
+        font-size: 12px;
     }
 </style>
 
